@@ -12,11 +12,22 @@ The **power budget equation** states that the power budget in a transmission sys
 
 The power budget is the difference between the transmitter output power and the receiver sensitivity in dBm:
 
-<img width="994" height="468" alt="image" src="https://github.com/user-attachments/assets/28074fe1-e571-4356-bf4c-29cf212c8173" />
+\[
+P_T - S_R = A \cdot L_F + L_C + L_A + M
+\]
+
+Where:
+- **PT** = transmitter output power (dBm)  
+- **SR** = receiver sensitivity (dBm)  
+- **A** = fiber attenuation (dB/km)  
+- **LF** = fiber length (km)  
+- **LC** = coupling loss (dB)  
+- **LA** = additional known losses (dB)  
+- **M** = power margin (dB)  
 
 In this exercise, all parameters are given except the fiber length, which must be determined.  
 
-The **receiver sensitivity** is defined as the minimum power required to achieve a BER of <img width="54" height="38" alt="image" src="https://github.com/user-attachments/assets/56f53e67-161a-4d53-ba6e-e31a3725ea43" />, corresponding to a Q factor of 6.  
+The **receiver sensitivity** is defined as the minimum power required to achieve a BER of \(10^{-9}\), corresponding to a Q factor of 6.  
 - Receiver sensitivity depends on the bit rate.  
 - Fiber attenuation depends on the operating wavelength.  
 
@@ -59,7 +70,34 @@ Using the power budget equation and the parameters below, determine the attenuat
      - Q factor  
      - Eye diagram  
 
-2. Set the fiber length to **125% of the calculated pre-lab value** and repeat the simulation and data recording.  
+2. Set the fiber length to **125% of the calculated pre-lab value** and repeat the simulation and data recording.
+
+   ## TABULATION OF 10GB AND 2.5GB:
+   <img width="640" height="771" alt="image" src="https://github.com/user-attachments/assets/c457f20a-fcf6-4ca7-8ec5-f2094d9788c7" />
+
+
+  ## GRAPH OF 10GB:
+  HIGH NOISE:
+  <img width="1917" height="928" alt="image" src="https://github.com/user-attachments/assets/b90f5e8f-855d-47a6-a3fd-24a42998ed03" />
+
+  LOW NOISE:
+  <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/d2dc4755-8f2d-48dc-ac39-eafa190c0563" />
+
+
+  ## GRAPH OF 2.5GB:
+  HIGH NOISE:
+  <img width="1917" height="928" alt="image" src="https://github.com/user-attachments/assets/c04a5301-5040-4f4c-949d-20c314388e97" />
+
+
+  LOW NOISE:
+  <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/a77c34cd-65c7-45d8-99fc-47b35d1d3c53" />
+
+
+## DESCRIPTION:
+Attenuation measurement at 2.5 Gbps and 10 Gbps evaluates the optical power loss in a fiber due to absorption, scattering, and connection losses. This measured attenuation determines the attenuation-limited fiber length, which is the maximum distance the signal can travel while still maintaining sufficient power at the receiver for reliable communication.
+
+ ## Result:
+ Thus the Experiment was succesfully completed and output is verified  
 
 ---
 
